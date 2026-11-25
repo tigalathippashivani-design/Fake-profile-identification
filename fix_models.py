@@ -1,0 +1,1 @@
+f=open('Remote_User/models.py','r');c=f.read();f.close();c=c.replace("models.CharField(max_length=3000)","models.TextField(null=True, blank=True)");f=open('Remote_User/models.py','w');f.write(c);f.close();print("Done!") 
